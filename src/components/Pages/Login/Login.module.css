@@ -1,0 +1,85 @@
+.fundo {
+    background-image: url('../../../img/BannerLogin.jpeg');
+    background-size:cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    color:  lime;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: black;
+    opacity: 90%;
+    width: 450px;
+    justify-content: center;
+    
+    
+}
+
+.container h1 {
+    padding-bottom: 1em;
+    color:orangered;
+    text-transform: uppercase;
+    font-weight: 900;   
+    padding-top: 30px;
+    justify-content: center;
+    
+}
+
+.container label {
+    margin-bottom: .5em;
+    justify-content: center; 
+    padding-bottom: .5em;
+    font-weight: bold;
+    background-color: black;
+    width: 10em;
+    margin-top: .5em;
+    color: lime;
+}
+
+.container input {
+    width: 10em;
+    margin-top: .5em;
+    color: lime;
+    background-color: black;
+    border: none;
+    border-radius: 1px;
+    border-bottom: 1px solid orangered;
+    margin-top: 15px;
+    font-size: 20px;
+    
+    }
+ 
+    .button {
+        padding: 5px 15px 5px 15px;
+        color:black;
+        border-radius: 10px;
+        border-color: transparent;
+        background-color: orangered;
+        margin-top: 25px;
+        margin-left: 50px;
+        font-size: 20px;
+        padding-bottom: 1px;
+        margin-bottom: 25px;
+    }
+
+.button:hover{
+    background-color: lime;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border-bottom: 1;
+    outline: 0;
+    color: lime;
+    background-color:black;
+} 

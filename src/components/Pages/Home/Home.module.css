@@ -1,0 +1,69 @@
+.fundo {
+    background-image: url('../../../img/BannerHome.jpg');
+    background-size:cover;
+    display: flex;
+    width: 100%; 
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 4em;
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+    color: orangered;
+    
+}
+
+.container p{
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    color: lime;
+    font-weight: 900;
+    
+    
+}
+
+.container button {
+    margin-top: 250px;
+    padding: 10px;
+    margin-left: 0px;
+    background-color:  orangered;
+    font-size: 25px;
+    color: lime;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: none;
+}
+
+.container button:hover{
+    background-color: black;
+}
+
+.div_btn_cad{
+    margin-top: 30px;
+    color: black;
+    padding-top: 250px;
+}
+
+.div_btn{
+    padding: 5px 15px 5px 15px;
+    color:black;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:orangered;
+    font-size: 35px;
+}
+
+.div_btn:hover{
+    background-color: lime;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}

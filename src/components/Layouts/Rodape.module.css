@@ -1,0 +1,18 @@
+.footer {
+    background-color: black;
+    color:lime;
+    text-align: center;
+    max-height: 55px;
+    
+}
+
+.copy_right {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.copy_right span{
+    font-weight: bold;
+    color:orangered;
+    
+}

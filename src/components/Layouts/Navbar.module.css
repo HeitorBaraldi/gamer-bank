@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+    padding: 1em;
+    align-items: center;
+    max-height: 55px;
+    
+}
+.navbar img {
+    max-width: 55px;
+    max-height: 55px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.item a {
+    color: lime;
+    text-decoration: none;
+}
+
+
+.item a:hover{
+    background-color: orangered;
+    color: lime;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.active {
+    background-color: orangered;
+    color: lime;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}

@@ -1,0 +1,14 @@
+.fundo{
+    background-image: url('../../../img/BannerBoleto2.jpg');
+    background-size:cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.fundo h1 {
+    color: lime;
+    margin: auto;
+    background-color: black;
+}
+
