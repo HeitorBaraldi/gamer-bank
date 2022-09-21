@@ -46,7 +46,9 @@ const Deposito = () => {
                 decimalsLimit="2"/>
               </label>
             </div>
-            <button className={styles.button}> Depositar </button>      
+            <button 
+              className={styles.button}
+              onClick={(e) => alert("Depósito efetuado")}> Depositar </button>      
           </form>
 
       </div>

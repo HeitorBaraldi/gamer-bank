@@ -46,7 +46,9 @@ const Saque = () => {
                 decimalsLimit="2"/>
               </label>
             </div>
-            <button className={styles.button}> Sacar </button>      
+            <button 
+              className={styles.button} 
+              onClick={(e) => alert("Saque efetuado")}> Sacar </button>      
           </form>
 
       </div>

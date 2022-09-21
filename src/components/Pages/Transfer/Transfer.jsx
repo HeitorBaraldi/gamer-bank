@@ -46,7 +46,9 @@ const Transfer = () => {
                 decimalsLimit="2"/>
               </label>
             </div>
-            <button className={styles.button}> Transferir </button>      
+            <button 
+              className={styles.button} 
+              onClick={(e) => alert("Transferência efetuada")}> Transferir </button>      
           </form>
 
       </div>
