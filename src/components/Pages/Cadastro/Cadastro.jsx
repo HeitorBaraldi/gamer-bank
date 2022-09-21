@@ -31,9 +31,9 @@ const Cadastro = () => {
   const [type, setType] = useState("CPF")
 
   const addUser = data =>
-  axios.post("https://611c-179-108-104-153.sa.ngrok.io/api/users", 
+  axios.post("https://b547-179-108-104-153.sa.ngrok.io/api/users", 
   
-  { name: data.name,
+  {   name: data.name,
       document_type: data.document_type,
       document_number: parseInt(data.document_number),
       email: data.email,

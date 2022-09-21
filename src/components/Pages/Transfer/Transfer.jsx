@@ -24,7 +24,7 @@ const Transfer = () => {
             <div className={styles.form_line}>
               <label htmlFor="">Conta: 
                 <InputMask className={styles.container_inputs} 
-                mask="99999-9" 
+                mask="9999999999999999" 
                 type="text" 
                 name='conta_destino'
                 autoComplete='none' 
@@ -35,7 +35,7 @@ const Transfer = () => {
             <div className={styles.form_line}>
               <label htmlFor="">Valor: 
                 <CurrencyInput className={styles.container_inputs} 
-                mask="999.999.999.999,99" 
+                prefix="R$"
                 type="text" 
                 name='valor'
                 autoComplete='none' 
@@ -52,3 +52,5 @@ const Transfer = () => {
 }
 
 export default Transfer
+
+//npm install react-currency-input-field - instalar para melhor config da tela de transf

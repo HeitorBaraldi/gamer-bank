@@ -62,48 +62,6 @@ const Navbar = () => {
 export default Navbar
 
 
-/*
-return (
-        <div className={styles.navbar}>
-            
-                <NavLink to="/">
-                    <img src={logo} alt="Banco"/>
-                </NavLink>
-
-                <ul className={styles.list}>
-                    <li className={styles.item}>
-                        <NavLink to="/login" className={({ isActive }) => (isActive ? styles.active : "")}>Login</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/cadastro" className={({ isActive }) => (isActive ? styles.active : "")}>Cadastro</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/transfer" className={({ isActive }) => (isActive ? styles.active : "")}>Transferência</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/deposito" className={({ isActive }) => (isActive ? styles.active : "")}>Depósito</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/saque" className={({ isActive }) => (isActive ? styles.active : "")}>Saque</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/boletogerar" className={({ isActive }) => (isActive ? styles.active : "")}>Gerar Boleto</NavLink>
-                    </li>
-                    <li className={styles.item}>
-                        <NavLink to="/boletopagar" className={({ isActive }) => (isActive ? styles.active : "")}>Pagar Boleto</NavLink>
-                    </li>
-                </ul>
-            
-        </div>
-    )
-}
-
-export default Navbar
-
-*/
-
-
-
 
 
 

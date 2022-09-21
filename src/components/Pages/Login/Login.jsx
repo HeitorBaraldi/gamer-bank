@@ -3,13 +3,10 @@ import React, {useState, useContext} from 'react'
 import  {AuthContext} from "../../../contexts/auth"
 import { Link } from 'react-router-dom'
 
-
 const Login = () => {
     const {authenticated, login} = useContext(AuthContext)
-
     const [username, setEmail] = useState("")
     const [password, setPassword] = useState("")
-
     const cliqueLogin = (e) => {
         login(username, password)
     }
@@ -47,7 +44,7 @@ return (
                     </div>
                         
                     <div>
-                            <Link to="/">
+                            <Link to="/transfer">
                                 <button className={styles.button}
                                     onClick={cliqueLogin} 
                                     type='submit'

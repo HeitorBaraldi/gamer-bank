@@ -22,7 +22,7 @@ function ContaUser() {
     }
   }
 
-    axios.get("https://ac24-179-108-104-153.sa.ngrok.io/api/users", dataUser)
+    axios.get("https://b547-179-108-104-153.sa.ngrok.io/api/users", dataUser)
     .then((response => {
       setConta(response.data)
       console.log(conta)
