@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Transfer.module.css';
 import InputMask from 'react-input-mask';
-import CurrencyInput from 'react-currency-masked-input';
+import CurrencyInput from 'react-currency-input-field';
 
 const Transfer = () => {
 
@@ -40,7 +40,10 @@ const Transfer = () => {
                 name='valor'
                 autoComplete='none' 
                 id='valor' 
-                placeholder="R$" />
+                placeholder="R$" 
+                decimalSeparator="," 
+                groupSeparator="."
+                decimalsLimit="2"/>
               </label>
             </div>
             <button className={styles.button}> Transferir </button>      
