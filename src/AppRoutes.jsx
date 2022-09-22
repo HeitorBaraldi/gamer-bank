@@ -1,7 +1,7 @@
 // React Router
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import React, { useContext } from 'react';
-
+import {AuthProvider, AuthContext} from './contexts/auth'
 
 // Components
 import Navbar from './components/layouts/Navbar'
@@ -16,11 +16,8 @@ import Deposito from './components/Pages/Deposito/Deposito';
 import Saque from './components/Pages/Saque/Saque';
 import BoletoGerar from './components/Pages/BoletoGerar/BoletoGerar';
 import BoletoPagar from './components/Pages/BoletoPagar/BoletoPagar';
-
-import {AuthProvider, AuthContext} from './contexts/auth'
 import ContaUser from './components/Pages/ContaUser/ContaUser';
 
-//import ContaUser from './pages/ContaUser/ContaUser'
 
 function AppRoutes () {
   
@@ -46,7 +43,7 @@ function AppRoutes () {
               <Route path="/" element={<Home />} />
               <Route path='/Login' element={<Login />} />
               <Route path='/Cadastro' element={<Cadastro />} />
-              <Route path='/ContaUser' element={<ContaUser/>}/>
+              <Route path='/Contauser' element={<ContaUser/>}/>
               <Route path="/Transfer"  element={<Private><Transfer/></Private>}/>
               <Route path='/Deposito' element={<Private><Deposito/></Private>}/>
               <Route path='/Saque' element={<Private><Saque/></Private>}/>

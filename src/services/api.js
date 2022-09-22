@@ -2,21 +2,26 @@ import axios from "axios";
 
 export const api = axios.create ({
     
-    baseURL: 'https://f7d7-179-108-104-153.sa.ngrok.io',
+    baseURL: 'https://367e-179-108-104-153.sa.ngrok.io',
 })
 
 export const createSession = async (username, 
   password) => {
     return api.post('/oauth/token', {
       client_id:"1",
-      client_secret:"OMcoraP2lW7dtfpJjtDKHzYW9dRK4GCOXIQnBzv2", 
+      client_secret:"ftSFyxxXvgTASm9WdDbvchTt4VQBqQ86ogbEP9An", 
       username, 
       password,
       grant_type:"client_credentials" });
 }
+/*
+export const dataUser = async (name) => {
+  return api.get('/api/users', {
+      name: "",
 
-
-
+  });
+}
+*/
 
 
 

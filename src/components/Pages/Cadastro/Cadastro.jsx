@@ -1,6 +1,6 @@
 import styles from './Cadastro.module.css';
 import { useState } from 'react'
-import axios from 'axios';
+import { api } from '../../../services/api'
 import { useForm } from 'react-hook-form'
 import InputMask from 'react-input-mask';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -12,7 +12,7 @@ const schema = yup.object({
   
   document_type: yup.string().required('Selecione o tipo de conta'),
   name: yup.string().required('O campo nome é obrigatório'),
-  document_number: yup.string('Digite um documento válido').required('O documento é obrigatório'),//.value()=>cpf.isValid(value) || cnpj.isValid(value),
+  document_number: yup.string('Digite um documento válido').required('O documento é obrigatório'),//.value() => cpf.isValid(data) || cnpj.isValid(data),
   email: yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
   password: yup.string().required('A senha é obrigatória'),
   road: yup.string().required('O campo endereço é obrigatório'),
@@ -31,7 +31,7 @@ const Cadastro = () => {
   const [type, setType] = useState("CPF")
 
   const addUser = data =>
-  axios.post("https://f7d7-179-108-104-153.sa.ngrok.io/api/users", 
+  api.post("/api/users", 
   
   {   name: data.name,
       document_type: data.document_type,

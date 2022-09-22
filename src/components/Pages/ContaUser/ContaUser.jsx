@@ -1,12 +1,25 @@
 import React from 'react'
 import styles from './ContaUser.module.css'
+import { api } from '../../../services/api'
 
-
-const ContaUser = () => {
+function ContaUser () {
+  const dataUser = (data) => api.get("/api/users", 
+    {   
+      name: data.name,
+    }
+        )
+.then((response) => {
+    console.log(response.data)
+    
+  })
+.catch((erro) => {
+    console.log(erro.response.data,"Deu erro ao pegar dados back")
+  });
 
   return (
     <div className={styles.fundo}>
-      <h1 className={styles.container}>Seus Dados</h1>
+      <h1 className={styles.container}>{dataUser}</h1>
+      
     </div>
   )
 }
