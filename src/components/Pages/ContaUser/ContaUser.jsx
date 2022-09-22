@@ -1,7 +1,81 @@
 import React from 'react'
+import styles from './ContaUser.module.css'
+
+
+const ContaUser = () => {
+
+  return (
+    <div className={styles.fundo}>
+      <h1 className={styles.container}>Seus Dados</h1>
+    </div>
+  )
+}
+
+export default ContaUser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react'
 import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import styles from './ContaUser.module.css';
 
 function ContaUser() {
 
@@ -22,7 +96,7 @@ function ContaUser() {
     }
   }
 
-    axios.get("https://b547-179-108-104-153.sa.ngrok.io/api/users", dataUser)
+    axios.get("https://f7d7-179-108-104-153.sa.ngrok.io/api/users", dataUser)
     .then((response => {
       setConta(response.data)
       console.log(conta)
@@ -40,8 +114,8 @@ function ContaUser() {
 
 
   return (
-    <div>
-      <h1>Sua conta</h1>
+    <div className={styles.fundo}>
+      <h1 className={styles.container}>Sua conta</h1>
       
       {Object.values(conta).map((contas, key) => (
           <div key={key}>
@@ -55,3 +129,4 @@ function ContaUser() {
 }
 
 export default ContaUser
+*/

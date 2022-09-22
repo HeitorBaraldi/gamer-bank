@@ -18,6 +18,7 @@ import BoletoGerar from './components/Pages/BoletoGerar/BoletoGerar';
 import BoletoPagar from './components/Pages/BoletoPagar/BoletoPagar';
 
 import {AuthProvider, AuthContext} from './contexts/auth'
+import ContaUser from './components/Pages/ContaUser/ContaUser';
 
 //import ContaUser from './pages/ContaUser/ContaUser'
 
@@ -45,6 +46,7 @@ function AppRoutes () {
               <Route path="/" element={<Home />} />
               <Route path='/Login' element={<Login />} />
               <Route path='/Cadastro' element={<Cadastro />} />
+              <Route path='/ContaUser' element={<ContaUser/>}/>
               <Route path="/Transfer"  element={<Private><Transfer/></Private>}/>
               <Route path='/Deposito' element={<Private><Deposito/></Private>}/>
               <Route path='/Saque' element={<Private><Saque/></Private>}/>

@@ -8,7 +8,7 @@ const Saque = () => {
   return (
     <div className={styles.fundo}>
       <div className={styles.container}>
-        <h1>Conta de destino</h1>
+        <h1>Sua Conta</h1>
           <form>
             <div >
               <label htmlFor="">Agência: 
@@ -58,4 +58,3 @@ const Saque = () => {
 
 export default Saque
 
-//npm install react-currency-input-field - instalar para melhor config da tela de transf

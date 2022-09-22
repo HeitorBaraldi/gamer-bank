@@ -24,6 +24,9 @@ const Navbar = () => {
                     {authenticated ? 
                         <>
                         <li className={styles.item}>
+                            <NavLink to="/contauser" className={({ isActive }) => (isActive ? styles.active : "")}>Sua Conta</NavLink>
+                        </li>
+                        <li className={styles.item}>
                             <NavLink to="/transfer" className={({ isActive }) => (isActive ? styles.active : "")}>Transferência</NavLink>
                         </li>
                         <li className={styles.item}>
