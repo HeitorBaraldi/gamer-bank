@@ -1,7 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './ContaUser.module.css'
 import { api } from '../../../services/api'
 
+
+
+const ContaUser = () => {
+  const [userdata, setUserdata] = useState();
+  const getData = async () => {
+    const response = await api.get('/api/users');
+    response.json().then((res)=> setUserdata(res.data.userdata));
+    console.log(userdata);
+    
+  };
+
+  useEffect(()=>{
+    getData();
+  })
+
+  return (
+    <div className={styles.fundo}>
+      {userdata.map((ce) => (
+             
+        <div className={styles.container} 
+              key={ce.name}>
+          {/*<h2>{ce.email}</h2>
+          <p>{ce.balance}</p>*/}
+          
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+export default ContaUser
+
+// testar o código amanhã 23/09
+
+/*
 function ContaUser () {
   const dataUser = (data) => api.get("/api/users", 
     {   
@@ -25,7 +61,7 @@ function ContaUser () {
 }
 
 export default ContaUser
-
+*/
 
 
 

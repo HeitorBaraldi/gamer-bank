@@ -11,3 +11,19 @@ html, body, #root {
   height: 100%;
 
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+  opacity: 95%;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 5px;
+  
+  
+}
