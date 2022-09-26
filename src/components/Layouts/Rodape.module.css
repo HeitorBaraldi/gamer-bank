@@ -2,13 +2,38 @@
     background-color: black;
     color:lime;
     text-align: center;
-    max-height: 55px;
-    
+    max-height: 60px;
+    align-items: center; 
+}
+
+.social_list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 10px;
+    color: orangered;
+    padding-bottom: 10px;
+}
+
+.social_list li {
+    margin: 0 1rem;
+}
+
+.social_list li svg {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.social_list a {
+    color: orangered;
+}
+
+.social_list a:hover {
+    color:lime;
 }
 
 .copy_right {
-    margin-top: 25px;
-    padding: 10px;
+    padding-bottom:10px;
 }
 
 .copy_right span{
