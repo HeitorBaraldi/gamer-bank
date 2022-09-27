@@ -30,9 +30,9 @@
 }
 
 .container button {
-    margin-top: 250px;
+    margin-bottom: 0px;
     padding: 10px;
-    margin-left: 0px;
+    justify-content: left;
     background-color:  orangered;
     font-size: 25px;
     color: lime;
@@ -142,4 +142,34 @@
 }
 .container2d h1 {
     color: orangered; 
+}
+
+
+@media screen and (max-width:500px) {
+    .fundo, .fundo2, .container  {
+        max-width:100vh;
+        justify-content: center;
+    }
+    
+    .fundo2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+    
+    .container2e {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .container2d {
+        margin-top: 50px;
+        
+    }
+    .div_btn_cad {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -41,3 +41,10 @@
     color:orangered;
     
 }
+
+
+@media screen and (max-width:500px) {
+    .footer {
+        max-width: 100vh;        
+    }
+}
