@@ -1,2 +1,2 @@
 ﻿# gamer-bank
-banco digital feito com react Js, utilizando hooks, context api.
+banco digital feito com React js, utilizando hooks, context api.
